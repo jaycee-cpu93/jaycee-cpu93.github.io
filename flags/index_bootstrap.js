@@ -69,9 +69,11 @@ for (let row = 0; row < totalRows; row++){
 }
 // container.appendChild(container1)
 
+let allFlags = document.getElementsByClassName("flag-list")
+console.log(allFlags)
 
-
-document.addEventListener("click", (e) => {
+//index 0 means we only create one html element class which is <div class="container-fluid flag-list">
+allFlags[0].addEventListener("click", (e) => {
     
     let url  = "https://en.wikipedia.org/wiki/"
     let countryName = e.target.textContent
